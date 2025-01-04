@@ -87,50 +87,50 @@ for (let i = 0; i < studentNames.length; i++) {
 
 // Qno.12 Answer
 
-// const colors = ["Red", "Yellow", "Green", "Blue"];
+const colors = ["Red", "Yellow", "Green", "Blue"];
 
-// const div6 = document.querySelector(".div6");
+const div6 = document.querySelector(".div6");
 
-// function displayArray() {
-//     div6.innerHTML = `<p style="margin: 0;">Updated Colors: ${colors.join(", ")}`;
-// }
-// displayArray();
+function displayArray() {
+    div6.innerHTML = `<p style="margin: 0;">Updated Colors: ${colors.join(", ")}`;
+}
+displayArray();
 
-// // a.
-// const newColorBegin = prompt("Enter a color to add at the Beginning");
-// colors.unshift(newColorBegin);
-// displayArray();
+// a.
+const newColorBegin = prompt("Enter a color to add at the Beginning");
+colors.unshift(newColorBegin);
+displayArray();
 
-// // b.
-// const newColorEnd = prompt("Enter a color to add at the End");
-// colors.push(newColorEnd);
-// displayArray();
+// b.
+const newColorEnd = prompt("Enter a color to add at the End");
+colors.push(newColorEnd);
+displayArray();
 
-// // c.
-// const color1 = prompt("Enter First color to add at the Beginning");
-// const color2 = prompt("Enter Second color to add at the Beginning");
-// colors.unshift(color1, color2);
-// displayArray();
+// c.
+const color1 = prompt("Enter First color to add at the Beginning");
+const color2 = prompt("Enter Second color to add at the Beginning");
+colors.unshift(color1, color2);
+displayArray();
 
-// // d.
-// colors.shift();
-// displayArray();
+// d.
+colors.shift();
+displayArray();
 
-// // e.
-// colors.pop();
-// displayArray();
+// e.
+colors.pop();
+displayArray();
 
-// // f.
-// const indexToAdd = prompt("Enter the index at which you want to add a color");
-// const colorToAdd = prompt("Enter the color name to add");
-// colors.splice(indexToAdd, 0, colorToAdd);
-// displayArray();
+// f.
+const indexToAdd = prompt("Enter the index at which you want to add a color");
+const colorToAdd = prompt("Enter the color name to add");
+colors.splice(indexToAdd, 0, colorToAdd);
+displayArray();
 
-// // g.
-// const indexToDelete = parseInt(prompt("Enter the index at which you want to delete colors"));
-// const numberToDelete = parseInt(prompt("Enter how many colors you want to delete"));
-// colors.splice(indexToDelete, numberToDelete);
-// displayArray();
+// g.
+const indexToDelete = parseInt(prompt("Enter the index at which you want to delete colors"));
+const numberToDelete = parseInt(prompt("Enter how many colors you want to delete"));
+colors.splice(indexToDelete, numberToDelete);
+displayArray();
 
 // Qno.13 Answer
 
