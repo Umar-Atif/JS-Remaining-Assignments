@@ -140,7 +140,7 @@ const div7 = document.querySelector(".div7");
 
 div7.innerHTML += `<p style="margin: 0;">Scores of Students : ${studentScores2}, `;
 
-studentScores2.sort(function (a, b) {return a - b});
+studentScores2.sort(function (a, b) { return a - b });
 
 div7.innerHTML += `<p style="margin: 0;">Ordered Scores of Students : ${studentScores2}, `;
 
@@ -172,4 +172,88 @@ div9.innerHTML += `
 <p style="margin: 0;">Cities list:</p>
 <p style="margin: 0;">${cities}</p> <br>
 <p style="margin: 0;">Selected cities list:</p>
-<p style="margin: 0;">${selectedCities}</p> <br>`;
+<p style="margin: 0;">${selectedCities}</p>`;
+
+// Qno.16 Answer
+
+var arr = ["This", "is", "my", "cat"];
+
+const div10 = document.querySelector(".div10");
+
+div10.innerHTML += `
+<p style="margin: 0;">Array:</p>
+<p style="margin: 0;">${arr}</p> <br>`;
+
+const joinArr = arr.join(" ");
+
+div10.innerHTML += `
+<p style="margin: 0;">String:</p>
+<p style="margin: 0;">${joinArr}</p>`;
+
+// Qno.17 Answer
+
+const devices = ["keyboard", "mouse", "printer", "monitor"];
+
+const div11 = document.querySelector(".div11");
+
+div11.innerHTML += `
+<p style="margin: 0;">Devices:</p>
+<p style="margin: 0;">${devices}</p> <br>`;
+
+div11.innerHTML += `
+<p style="margin: 0;">Out:</p>
+<p style="margin: 0;">${devices.shift()}</p>
+<p style="margin: 0;">Out:</p>
+<p style="margin: 0;">${devices.shift()}</p>
+<p style="margin: 0;">Out:</p>
+<p style="margin: 0;">${devices.shift()}</p>
+<p style="margin: 0;">Out:</p>
+<p style="margin: 0;">${devices.shift()}</p>`;
+
+// Qno.18 Answer
+
+const devices2 = ["keyboard", "mouse", "printer", "monitor"];
+
+const div12 = document.querySelector(".div12");
+
+div12.innerHTML += `
+<p style="margin: 0;">Devices:</p>
+<p style="margin: 0;">${devices2}</p> <br>`;
+
+div12.innerHTML += `
+<p style="margin: 0;">Out:</p>
+<p style="margin: 0;">${devices2.pop()}</p>
+<p style="margin: 0;">Out:</p>
+<p style="margin: 0;">${devices2.pop()}</p>
+<p style="margin: 0;">Out:</p>
+<p style="margin: 0;">${devices2.pop()}</p>
+<p style="margin: 0;">Out:</p>
+<p style="margin: 0;">${devices2.pop()}</p>`;
+
+// Qno.19 Answer
+
+const manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+document.write('<select name="phones" id="phoneSelect">');
+
+for (var i = 0; i < manufacturers.length; i++) {
+    document.write('<option value="' + manufacturers[i] + '">' + manufacturers[i] + '</option>');
+}
+
+document.write('</select>');
+
+// Qno.20 Answer
+
+const multidimensionalArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+// Qno.21 Answer
+
+const multidimensionalMatrixArray = [
+    [0, 1, 2, 3],
+    [1, 0, 1, 2],
+    [2, 1, 0, 1]
+];
