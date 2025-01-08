@@ -54,3 +54,82 @@ Element at index 1 is ${fruits[1]} <br>
 Element at index 2 is ${fruits[2]} <br>
 Element at index 3 is ${fruits[3]} <br>
 Element at index 4 is ${fruits[4]} <br>`
+
+// Qno.6 Answer
+
+const n = prompt("Enter number of items");
+const arr = [];
+
+const div6 = document.querySelector(".div6");
+
+for (let i = 0; i < n; i++) {
+    const value = prompt(`Enter value for index ${i}`)
+    arr[i] = value
+}
+
+div6.innerHTML = `
+Number of items: ${n} <br>
+Items: <br><br>`
+
+for (let i = 0; i < arr.length; i++) {
+    div6.innerHTML += `${arr[i]} <br>`    
+}
+
+// Qno.7 Answer
+
+const div7 = document.querySelector(".div7");
+
+// a.
+const counting = [];
+
+for (let i = 1; i <= 15; i++) {
+    counting.push(i)   
+}
+
+div7.innerHTML += `
+<b>Counting:</b><br><br>
+${counting.join(', ')} <br><br> `;
+
+// b.
+const reverseCounting = [];
+
+for (let i = 10; i >= 1; i--) {
+    reverseCounting.push(i)   
+}
+
+div7.innerHTML += `
+<b>Reverse counting:</b><br><br>
+${reverseCounting.join(', ')} <br><br>`;
+
+// c.
+const even = [];
+
+for (let i = 0; i <= 20; i+= 2) {
+    even.push(i)
+}
+
+div7.innerHTML += `
+<b>Even:</b><br><br>
+${even.join(', ')} <br><br>`;
+
+// d.
+const odd = [];
+
+for (let i = 1; i <= 19; i+= 2) {
+    odd.push(i)    
+}
+
+div7.innerHTML += `
+<b>Odd:</b><br><br>
+${odd.join(', ')} <br><br>`;
+
+// e.
+const series = [];
+
+for (let i = 2; i <= 20; i+= 2) {
+    series.push(i + "k")
+}
+
+div7.innerHTML += `
+<b>Odd:</b><br><br>
+${series.join(', ')} <br><br>`;
